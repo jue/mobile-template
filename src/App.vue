@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <div class="test">这里是测试字体大小</div>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button type="info">信息按钮</van-button>
+    <van-button type="default">默认按钮</van-button>
+    <van-button type="warning">警告按钮</van-button>
+    <van-button type="danger">危险按钮</van-button>
+    <router-view />
   </div>
 </template>
 
@@ -28,5 +30,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.test {
+  font-size: 16px;
 }
 </style>
